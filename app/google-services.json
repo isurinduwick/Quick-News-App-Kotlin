@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "313775044187",
+    "project_id": "newsagencyproject-d1907",
+    "storage_bucket": "newsagencyproject-d1907.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313775044187:android:613e5076d6ee91e0f3717e",
+        "android_client_info": {
+          "package_name": "com.example.newsagencyproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl1oTT16HKL09usduN_xTBjS4dqiRzWjg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

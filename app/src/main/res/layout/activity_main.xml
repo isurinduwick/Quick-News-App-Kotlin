@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/fab"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="38dp"
+        android:background="@drawable/rounded_button_bg"
+        android:contentDescription="Open Camera"
+        android:elevation="10dp"
+        android:padding="12dp"
+        android:src="@drawable/add"
+        app:tint="@color/white"
+        android:shadowColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/titleDashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="News Dashboard"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:padding="12dp"
+        android:background="@drawable/title_background"
+        android:elevation="6dp"
+        android:shadowColor="@color/black"
+        android:layout_marginTop="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titleDashboard"
+        android:layout_above="@+id/fab"
+        android:padding="12dp"
+        android:scrollbars="vertical"
+        android:clipToPadding="false"
+        android:background="@android:color/transparent"/>
+
+</RelativeLayout>

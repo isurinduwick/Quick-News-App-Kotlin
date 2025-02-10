@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="my_primary">#94618E</color>
+    <color name="lavender">#94618E</color>
+    <color name="my_secondary">#6BAA75</color>
+    <color name="deep_purple">#4B0082</color>
+    <color name="lavender_light">#E6E6FA</color>
+</resources>

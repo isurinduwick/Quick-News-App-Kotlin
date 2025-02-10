@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/card_background"
+    android:elevation="4dp"
+    android:layout_margin="8dp">
+
+    <!-- Image -->
+    <ImageView
+        android:id="@+id/newsImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_image"/>
+
+
+    <!-- News Title -->
+    <TextView
+        android:id="@+id/newsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#222"
+        android:paddingBottom="4dp" />
+
+    <!-- News Description -->
+    <TextView
+        android:id="@+id/newsDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="14sp"
+        android:textColor="#555"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:paddingBottom="8dp" />
+
+    <!-- News Status -->
+    <TextView
+        android:id="@+id/newsStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pending"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="4dp"
+        android:background="@drawable/status_background"
+        android:textColor="#FFF"
+        android:gravity="center"
+        android:minWidth="80dp"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:id="@+id/editorButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:paddingTop="8dp"
+        android:visibility="gone"> <!-- Hidden by default -->
+
+        <Button
+            android:id="@+id/btnApprove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/my_secondary"
+            android:text="Approve" />
+
+        <Button
+            android:id="@+id/btnReject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/my_primary"
+            android:text="Reject"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+</LinearLayout>
